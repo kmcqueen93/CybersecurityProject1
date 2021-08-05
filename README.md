@@ -12,8 +12,8 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
+- Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 
@@ -53,25 +53,14 @@ Private IP: 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
+| Name          | Publicly Accessible | Allowed IP Addresses |
+|---------------|---------------------|----------------------|
+| Jump Box      | Yes                 | 10.0.0.4             |
+| Web1          | No                  | 10.0.0.5             |
+| Web2          | No                  | 10.0.0.6             |
+| Web3          | No                  | 10.0.0.7             |
+| Project1(Elk) | Yes                 | 10.1.0.4             |
 
-Name
-Publicly Accessible
-Allowed IP Addresses
-Jump Box
-Yes
-10.0.0.4 
-Web1
-No
-10.0.0.5
-Web2
-No
-10.0.0.6
-Web3
-No
-10.0.0.7
-Project1(ELK)
-Yes
-10.1.0.4
 
 
 
